@@ -16,8 +16,7 @@
 }
 
 .privacy-policy-content {
-  @apply relative
-  z-20
+  @apply z-10
   mt-24
   px-2
   sm:px-5
