@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import { FC } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import { FC } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 // CSS Import
-import './footer-section.css';
+import "./footer-section.css";
 
 // Icon Imports
-import { AiOutlinePhone, AiOutlineMail } from 'react-icons/ai';
-import { HiOutlineBuildingOffice } from 'react-icons/hi2';
+import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
+import { HiOutlineBuildingOffice } from "react-icons/hi2";
 
 const Footer: FC = () => {
   return (
@@ -33,13 +33,15 @@ const Footer: FC = () => {
 
           <address className="company-info-item">
             <HiOutlineBuildingOffice className="company-info-icon" />
-            <span className="company-info-text">15th floor, 800 Third Ave</span>
-            <span className="company-info-text">New York - 10022, USA</span>
+            <span className="company-info-text">7618 N Decatur Blvd</span>
+            <span className="company-info-text">
+              North Las Vegas, NV 89131, USA
+            </span>
           </address>
           <div className="company-info-item">
             <AiOutlinePhone className="company-info-icon" />
             <a className="company-info-text" href="tel:16464034553">
-              +1 (646) 403-4553
+              +1 (212) 684-5874
             </a>
           </div>
           <div className="company-info-item">
@@ -48,7 +50,7 @@ const Footer: FC = () => {
               className="company-info-text"
               href="mailto:kesefcapitalgroup@gmail.com"
             >
-              info@kesefcapitalgroup.com
+              info@kesefcapital-llc.com
             </a>
           </div>
         </div>

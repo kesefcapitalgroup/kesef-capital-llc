@@ -1,5 +1,5 @@
-import React from 'react';
-import './privacy-policy-page.css';
+import React from "react";
+import "./privacy-policy-page.css";
 
 const PrivacyPolicyPage = () => {
   return (
@@ -81,10 +81,9 @@ const PrivacyPolicyPage = () => {
             - Provide Services: Process loan applications, manage your account,
             and offer customer support. <br />
             - Improve Our Services: Analyze how you use our services to enhance
-            your experience. <br />
-            - Comply with Laws: Meet legal requirements and prevent fraud.{' '}
-            <br />- Communicate: Respond to your inquiries and, if you opt in,
-            send marketing about new products or services.
+            your experience. <br />- Comply with Laws: Meet legal requirements
+            and prevent fraud. <br />- Communicate: Respond to your inquiries
+            and, if you opt in, send marketing about new products or services.
           </p>
         </section>
 
@@ -166,8 +165,8 @@ const PrivacyPolicyPage = () => {
           <p>
             Have questions about this Privacy Policy or our practices? Reach us
             at: <br />
-            Phone: (646) 403-4553 <br />
-            Email: info@kesefcapital.com
+            Phone: (212) 684-5874 <br />
+            Email: info@kesefcapital-llc.com
           </p>
         </section>
 
