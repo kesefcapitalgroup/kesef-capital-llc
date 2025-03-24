@@ -1,22 +1,23 @@
-'use client';
+"use client";
 
 // React Import
-import { useState } from 'react';
+import { useState } from "react";
+import Link from "next/link";
 
 // CSS Import
-import './apply-now-page.css';
+import "./apply-now-page.css";
 
 // UI Component Import
-import Button from '@/components/ui/button/Button';
+import Button from "@/components/ui/button/Button";
 
 const ApplyNowPage = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    businessName: '',
-    desiredAmount: '',
-    avgMonthlyRevenue: '',
-    email: '',
-    phone: '',
+    name: "",
+    businessName: "",
+    desiredAmount: "",
+    avgMonthlyRevenue: "",
+    email: "",
+    phone: "",
   });
 
   // Handle input change
@@ -32,12 +33,12 @@ const ApplyNowPage = () => {
 
     // Clear the form fields
     setFormData({
-      name: '',
-      businessName: '',
-      desiredAmount: '',
-      avgMonthlyRevenue: '',
-      email: '',
-      phone: '',
+      name: "",
+      businessName: "",
+      desiredAmount: "",
+      avgMonthlyRevenue: "",
+      email: "",
+      phone: "",
     });
   };
 
@@ -47,7 +48,7 @@ const ApplyNowPage = () => {
         className="apply-now-section"
         style={{
           backgroundImage: `url('/img/hero-bg/apply-now-bg.webp')`,
-          backgroundPosition: 'center',
+          backgroundPosition: "center",
         }}
       >
         <div className="bg-img-overlay" />
@@ -155,6 +156,30 @@ const ApplyNowPage = () => {
                 value={formData.phone}
                 onChange={handleChange}
               />
+            </div>
+
+            <div className="checkbox-container sms-consent-box">
+              <input
+                type="checkbox"
+                id="sms-consent"
+                className="checkbox-item"
+                // checked={isChecked}
+                required
+                // onChange={() => setIsChecked(!isChecked)}
+              />
+              <label
+                htmlFor="sms-consent"
+                className="checkbox-label sms-consent"
+              >
+                I agree to receive communications by text message from KESEF
+                CAPITAL LLC. You may opt-out by replying STOP or ask for more
+                information by replying HELP. Message frequency varies. Message
+                and data rates may apply. You may review our{" "}
+                <Link href="/privacy-policy" className="privacy-link">
+                  Privacy Policy
+                </Link>{" "}
+                to learn how your data is stored.
+              </label>
             </div>
 
             <input
