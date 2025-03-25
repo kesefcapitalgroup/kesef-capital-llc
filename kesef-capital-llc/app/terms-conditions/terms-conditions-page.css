@@ -1,0 +1,44 @@
+.terms-conditions-page {
+  @apply bg-neutral-100
+  relative
+  
+  text-gray-700 p-4 md:p-8;
+}
+
+.terms-conditions-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.terms-conditions-content {
+  @apply z-10
+  mt-24
+  px-2
+  sm:px-5
+  md:px-7
+  lg:px-9
+  xl:px-12
+  2xl:px-16;
+}
+
+.terms-conditions-page h1 {
+  @apply text-3xl md:text-4xl font-bold mb-6;
+}
+
+.terms-conditions-page h2 {
+  @apply text-2xl font-semibold my-4;
+}
+
+.terms-conditions-page p,
+.terms-conditions-page ul {
+  @apply mb-4;
+}
+
+.terms-conditions-page ul {
+  @apply list-disc list-inside;
+}
