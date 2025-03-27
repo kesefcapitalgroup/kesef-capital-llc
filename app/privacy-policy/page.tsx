@@ -15,9 +15,9 @@ const PrivacyPolicyPage = () => {
           <p>
             We value your privacy at KESEF CAPITAL LLC. This Privacy Policy
             outlines how we collect, utilize, share, and safeguard your
-            information when you use our website ("Site") and services,
-            including text messaging. By using our services, you agree to the
-            terms of this policy.
+            information when you use our website (&ldquo;Site&rdquo;) and
+            services, including text messaging. By using our services, you agree
+            to the terms of this policy.
           </p>
         </section>
 
@@ -115,7 +115,7 @@ const PrivacyPolicyPage = () => {
         </section>
 
         <section>
-          <h2>9. Children's Privacy</h2>
+          <h2>9. Children&apos;s Privacy</h2>
           <p>
             Our services, including text messaging, are not intended for
             children under 13. We do not intentionally collect their data.
@@ -125,9 +125,10 @@ const PrivacyPolicyPage = () => {
         <section>
           <h2>10. Updates to This Policy</h2>
           <p>
-            This Privacy Policy may change over time. The "Last Updated" date at
-            the top reflects the latest revisions. Continued use of our services
-            signifies your acceptance of any updates.
+            This Privacy Policy may change over time. The &ldquo;Last
+            Updated&rdquo; date at the top reflects the latest revisions.
+            Continued use of our services signifies your acceptance of any
+            updates.
           </p>
         </section>
 
