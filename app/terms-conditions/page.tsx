@@ -125,9 +125,9 @@ const TermsConditionsPage = () => {
         <section>
           <h2>9. Laws and Disputes</h2>
           <p>
-            These Terms and Conditions are governed by the laws of Palm Beach
-            County, Florida. Any disputes relating to these terms will be
-            resolved in the courts of Palm Beach County, Florida.
+            These Terms and Conditions are governed by the laws of Las Vegas,
+            Nevada. Any disputes relating to these terms will be resolved in the
+            courts of Las Vegas, Nevada.
           </p>
         </section>
 
