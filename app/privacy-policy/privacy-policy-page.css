@@ -6,7 +6,7 @@
 }
 
 .privacy-policy-page::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -23,7 +23,8 @@
   md:px-7
   lg:px-9
   xl:px-12
-  2xl:px-16;
+  2xl:px-16
+  relative;
 }
 
 .privacy-policy-page h1 {

@@ -73,14 +73,24 @@
   bg-gradient-to-tr from-gray-300 to-gray-100;
 }
 
+.agreement-statement {
+  @apply text-neutral-200
+  text-sm
+  mb-4
+  ml-5;
+}
+
 .sms-consent-box {
-  @apply flex
-  flex-row
-  gap-2
-  w-56
+  @apply w-56
   sm:w-72
   md:w-80
   lg:w-96;
+}
+
+.sms-consent-content {
+  @apply flex
+  flex-row
+  gap-2;
 }
 
 .sms-consent {

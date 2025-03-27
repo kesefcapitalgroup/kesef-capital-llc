@@ -23,7 +23,8 @@
   md:px-7
   lg:px-9
   xl:px-12
-  2xl:px-16;
+  2xl:px-16
+  relative;
 }
 
 .terms-conditions-page h1 {

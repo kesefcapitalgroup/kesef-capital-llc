@@ -1,7 +1,7 @@
 .header-section {
   @apply w-full 
   fixed 
-  z-10 
+  z-20 
   bg-neutral-950/25 
   backdrop-blur 
   hover:backdrop-blur-md 

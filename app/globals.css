@@ -192,3 +192,10 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
   background: #666; /* Color of the scroll thumb on hover */
 }
+
+.link {
+  @apply underline
+  text-blue-500
+  hover:no-underline
+  transition;
+}

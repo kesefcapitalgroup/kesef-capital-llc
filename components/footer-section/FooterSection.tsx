@@ -40,7 +40,7 @@ const Footer: FC = () => {
           </address>
           <div className="company-info-item">
             <AiOutlinePhone className="company-info-icon" />
-            <a className="company-info-text" href="tel:16464034553">
+            <a className="company-info-text" href="tel:12126845874">
               +1 (212) 684-5874
             </a>
           </div>
@@ -48,7 +48,7 @@ const Footer: FC = () => {
             <AiOutlineMail className="company-info-icon" />
             <a
               className="company-info-text"
-              href="mailto:kesefcapitalgroup@gmail.com"
+              href="mailto:info@kesefcapital-llc.com"
             >
               info@kesefcapital-llc.com
             </a>

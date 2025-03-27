@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import "./terms-conditions-page.css";
 
@@ -8,7 +9,7 @@ const TermsConditionsPage = () => {
       <div className="terms-conditions-content">
         <h1>Terms and Conditions</h1>
         <p>
-          <strong>Last Updated: March 24, 2025</strong>
+          <strong>Last Updated: March 27, 2025</strong>
         </p>
         <p>
           By using our website and services, including text messaging, you agree
@@ -62,10 +63,13 @@ const TermsConditionsPage = () => {
           <h2>4. Privacy</h2>
           <ul>
             <li>
-              <strong>Privacy Policy:</strong> Our Privacy Policy explains how
-              we collect, use, and protect your data, including information you
-              share through text messages. By using our website and text
-              messaging, you agree to our Privacy Policy.
+              <strong>Privacy Policy:</strong> Our{" "}
+              <Link href="/privacy-policy" className="link">
+                Privacy Policy
+              </Link>{" "}
+              explains how we collect, use, and protect your data, including
+              information you share through text messages. By using our website
+              and text messaging, you agree to our Privacy Policy.
             </li>
             <li>
               <strong>No Data Sharing:</strong> We do not share or sell your
@@ -141,8 +145,15 @@ const TermsConditionsPage = () => {
           <p>
             For questions about these Terms and Conditions, please email us at:{" "}
             <br />
-            Email: info@kesefcapital-llc.com <br />
-            Phone: (212) 684-5874
+            Email:{" "}
+            <a href="mailto:info@kesefcapital-llc.com" className="link">
+              info@kesefcapital-llc.com
+            </a>
+            <br />
+            Phone:{" "}
+            <a href="tel:12126845874" className="link">
+              +1 (212) 684-5874
+            </a>
           </p>
         </section>
       </div>

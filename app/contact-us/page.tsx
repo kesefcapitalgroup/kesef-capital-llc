@@ -1,18 +1,18 @@
-'use client';
+"use client";
 
-import './contact-us-page.css';
-import '@/components/ui/button/button.css';
-import Link from 'next/link';
-import { useState } from 'react';
+import "./contact-us-page.css";
+import "@/components/ui/button/button.css";
+import Link from "next/link";
+import { useState } from "react";
 
-import Button from '@/components/ui/button/Button';
+import Button from "@/components/ui/button/Button";
 
 const ContactUsPage = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
   });
 
   const [isChecked, setIsChecked] = useState(false);
@@ -28,10 +28,10 @@ const ContactUsPage = () => {
 
     // Clear the form fields
     setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      message: '',
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
     });
 
     // Uncheck the checkbox
@@ -46,7 +46,7 @@ const ContactUsPage = () => {
         className="contact-us-section"
         style={{
           backgroundImage: `url('/img/hero-bg/contact-us-bg.webp')`,
-          backgroundPosition: 'center',
+          backgroundPosition: "center",
         }}
       >
         <div className="bg-img-overlay" />
@@ -127,27 +127,38 @@ const ContactUsPage = () => {
             </div>
 
             <div className="checkbox-container sms-consent-box">
-              <input
-                type="checkbox"
-                id="sms-consent"
-                className="checkbox-item"
-                checked={isChecked}
-                required
-                onChange={() => setIsChecked(!isChecked)}
-              />
-              <label
-                htmlFor="sms-consent"
-                className="checkbox-label sms-consent"
-              >
-                I agree to receive communications by text message from KESEF
-                CAPITAL LLC. You may opt-out by replying STOP or ask for more
-                information by replying HELP. Message frequency varies. Message
-                and data rates may apply. You may review our{' '}
-                <Link href="/privacy-policy" className="privacy-link">
+              <p className="agreement-statement">
+                I have read and agree with{" "}
+                <Link href="terms-conditions" className="link">
+                  Terms and Conditions
+                </Link>{" "}
+                &{" "}
+                <Link href="privacy-policy" className="link">
                   Privacy Policy
-                </Link>{' '}
-                to learn how your data is stored.
-              </label>
+                </Link>
+                .
+              </p>
+              <div className="sms-consent-content">
+                <input
+                  type="checkbox"
+                  id="sms-consent"
+                  className="checkbox-item"
+                  // checked={isChecked}
+                  required
+                  // onChange={() => setIsChecked(!isChecked)}
+                />
+                <label
+                  htmlFor="sms-consent"
+                  className="checkbox-label sms-consent"
+                >
+                  By checking this box, you agree to receive text messages
+                  (e.g., payment reminders) from KESEF CAPITAL LLC at the cell
+                  number used when signing up. Consent is not a condition of any
+                  purchase. Reply STOP to unsubscribe, HELP for help. Message &
+                  data rates may apply. Message frequency varies. I have read
+                  and agree with the Terms and Conditions & Privacy Policy.
+                </label>
+              </div>
             </div>
 
             <input
